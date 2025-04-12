@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Producto</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/producto.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg shadow-sm p-2">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="../public/Logo Jimdur/logo_Jimdur_pequeno.png" alt="Jimdur Logo">
+                </a>
+
+                <!-- Contenido principal de la navegación -->
+                <div class="collapse navbar-collapse ms-5" id="navbarNav">
+                    <!-- Enlaces de navegación (centrados) -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="categoriasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="categoriasDropdown">
+                                <li><a class="dropdown-item" href="#">Motores</a></li>
+                                <li><a class="dropdown-item" href="#">Frenos</a></li>
+                                <li><a class="dropdown-item" href="#">Transmisión</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ver todas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- Barra de búsqueda (visible solo en pantallas grandes) -->
+                    <div class="d-none d-lg-flex">
+                        <form class="search-form d-flex border" role="search">
+                            <input class="form-control" type="search" placeholder="Buscar productos..."
+                                aria-label="Buscar">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Acciones del usuario (visibles solo en pantallas grandes) -->
+                    <div class="d-none d-lg-flex align-items-center ms-3">
+                        <!-- Favoritos -->
+                        <div class="dropdown">
+                            <button class="btn-icon position-relative" type="button" id="favoritosDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-heart"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger badge-count">
+                                    2
+                                </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="favoritosDropdown">
+                                <h6 class="fw-bold mb-3">Mis Favoritos</h6>
+                                <div class="cart-item d-flex align-items-center">
+                                    <img src="" class="me-3" alt="Producto">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Filtro de aceite</p>
+                                        <small class="text-muted">S/. 45.00</small>
+                                    </div>
+                                    <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                                </div>
+                                <div class="cart-item d-flex align-items-center">
+                                    <img src="" class="me-3" alt="Producto">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Kit de frenos</p>
+                                        <small class="text-muted">S/. 120.00</small>
+                                    </div>
+                                    <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                                </div>
+                                <div class="d-grid gap-2 mt-3">
+                                    <a href="#" class="btn btn-sm btn-danger">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carrito -->
+                        <div class="dropdown">
+                            <button class="btn-icon position-relative" type="button" id="carritoDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger badge-count">
+                                    3
+                                </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="carritoDropdown">
+                                <h6 class="fw-bold mb-3">Mi Carrito</h6>
+                                <div class="cart-item d-flex align-items-center">
+                                    <img src="/api/placeholder/40/40" class="me-3" alt="Producto">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Filtro de aceite</p>
+                                        <small class="text-muted">1 x S/. 45.00</small>
+                                    </div>
+                                    <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                                </div>
+                                <div class="cart-item d-flex align-items-center">
+                                    <img src="/api/placeholder/40/40" class="me-3" alt="Producto">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Kit de frenos</p>
+                                        <small class="text-muted">1 x S/. 120.00</small>
+                                    </div>
+                                    <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                                </div>
+                                <div class="cart-item d-flex align-items-center">
+                                    <img src="/api/placeholder/40/40" class="me-3" alt="Producto">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Aceite motor</p>
+                                        <small class="text-muted">2 x S/. 35.00</small>
+                                    </div>
+                                    <button class="btn btn-sm ms-auto"><i class="fas fa-trash text-danger"></i></button>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <span>Total:</span>
+                                    <span class="fw-bold">S/. 235.00</span>
+                                </div>
+                                <div class="d-grid gap-2 mt-3">
+                                    <a href="#" class="btn btn-sm btn-danger">Proceder al pago</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Acceder/Usuario -->
+                        <button class="btn-icon active ms-2" data-bs-toggle="modal" data-bs-target="#authModal">
+                            <i class="fas fa-user"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Modal de Autenticación -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Accede a JIMDUR</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tabs para login/registro -->
+                    <ul class="nav nav-tabs nav-fill mb-4 auth-tabs" id="authTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login"
+                                type="button" role="tab" aria-controls="login" aria-selected="true">Iniciar
+                                Sesión</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register"
+                                type="button" role="tab" aria-controls="register"
+                                aria-selected="false">Registrarse</button>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de los tabs -->
+                    <div class="tab-content" id="authTabsContent">
+                        <!-- Formulario de Login -->
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="loginEmail"
+                                        placeholder="ejemplo@correo.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="loginPassword"
+                                        placeholder="Ingrese su contraseña" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Recordarme</label>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-danger">Iniciar Sesión</button>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="#" class="text-secondary">¿Olvidaste tu contraseña?</a>
+                                </div>
+
+                                <div class="mt-4">
+                                    <p class="text-center mb-3">O inicia sesión con:</p>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <button type="button" class="btn btn-outline-primary"><i
+                                                class="fab fa-facebook-f"></i></button>
+                                        <button type="button" class="btn btn-outline-danger"><i
+                                                class="fab fa-google"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Formulario de Registro -->
+                        <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Tu nombre"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Tu apellido"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="registerEmail"
+                                        placeholder="ejemplo@correo.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="phone"
+                                        placeholder="Teléfono de contacto">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="registerPassword"
+                                        placeholder="Crea una contraseña" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                                    <input type="password" class="form-control" id="confirmPassword"
+                                        placeholder="Repite la contraseña" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                                    <label class="form-check-label" for="termsCheck">Acepto los <a href="#"
+                                            class="text-danger">términos y condiciones</a></label>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-danger">Registrarse</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main></main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
