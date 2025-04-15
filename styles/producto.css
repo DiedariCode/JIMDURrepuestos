@@ -1,0 +1,144 @@
+.main-title {
+    text-align: center;
+    margin: 20px 0 5px;
+    font-weight: bold;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.category-title, .filter-title, .price-title {
+    color: #9d1c20;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.category-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.category-list li.active {
+    font-weight: bold;
+}
+
+.price-range {
+    margin: 15px 0;
+}
+
+.price-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.product-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    min-height: 40px;
+}
+
+.product-price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-agregar {
+    background-color: #9d1c20;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+.product-img {
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.pagination {
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pagination .page-item .page-link {
+    color: #333;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #9d1c20;
+    border-color: #9d1c20;
+    color: white;
+}
+
+.reviews-section, .newsletter-section {
+    margin: 50px 0;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 5px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stars {
+    color: gold;
+    margin-bottom: 5px;
+}
+
+.newsletter-form {
+    max-width: 400px;
+}
+
+.btn-suscribirse {
+    background-color: #9d1c20;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    margin-top: 15px;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}

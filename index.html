@@ -272,86 +272,505 @@
     </div>
     <!-- Main Content -->
     <main class="main-content">
-        <!-- SECCIÓN HERO MEJORADA -->
-        <div class="seccion-moto">
+        <!-- SECCIÓN HERO Y PRODUCTOS -->
+        <section class="hero-section" id="hero">
             <div class="container">
-                <h1 class="fade-in">REPUESTOS ORIGINALES Y DE CALIDAD</h1>
-                <p class="fade-in">
-                    Ofrecemos una amplia gama de repuestos originales diseñados para maximizar el rendimiento
-                    <br class="d-none d-md-block">
-                    y la vida útil de tu moto para que disfrutes de la carretera con total confianza
-                </p>
-                <a href="" class="btn btn-danger btn-lg px-4 fade-in">VER PRODUCTOS</a>
-            </div>
-        </div>
-
-        <!-- SUB ENCABEZADO MEJORADO -->
-        <nav class="sub-encabezado">
-            <a href="#ventajas">VENTAJAS</a>
-            <a href="#productos">DESTACADOS</a>
-            <a href="#categorias">CATEGORÍAS</a>
-            <a href="#servicios">SERVICIOS</a>
-            <a href="#reseñas">RESEÑAS</a>
-            <a href="#proveedores">PROVEEDORES</a>
-        </nav>
-
-        <!-- SECCIÓN NUESTRAS VENTAJAS CON BOOTSTRAP -->
-        <section class="ventajas" id="ventajas">
-            <div class="container">
-                <h2>NUESTRAS <span>VENTAJAS</span></h2>
-                <p class="descripcion">
-                    Encuentra todo lo que necesitas para tu moto, con la confianza de estar eligiendo lo mejor.
-                </p>
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="ventaja" data-aos="fade-up" data-aos-delay="100">
-                            <div class="ventaja__icono">
-                                <img src="/api/placeholder/40/40" alt="Calidad">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="hero-text animated">
+                            <h1 class="text-dark fw-bold">Bienvenido a <span class="highlight">JIMDUR
+                                    <br>Repuestos</span></h1>
+                            <p>Encuentra los repuestos y accesorios de alta calidad que necesitas para tu moto con
+                                envíos a todo el país.</p>
+                            <div class="d-flex flex-wrap">
+                                <a href="#ofertas" class="btn btn-primary btn-responsive me-2 mb-2">Ofertas
+                                    Especiales</a>
+                                <a href="#catalogo" class="btn btn-outline-dark btn-responsive mb-2">Ver Catálogo</a>
                             </div>
-                            <h3 class="ventaja__titulo">CALIDAD</h3>
-                            <p>
-                                Repuestos originales que garantizan un rendimiento y durabilidad excepcionales.
-                            </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="ventaja" data-aos="fade-up" data-aos-delay="200">
-                            <div class="ventaja__icono --circulo-rojo">
-                                <img src="/api/placeholder/40/40" alt="Experiencia">
-                            </div>
-                            <h3 class="ventaja__titulo">EXPERIENCIA</h3>
-                            <p>
-                                Más de 5 años dedicados al motociclismo, con un equipo experto que conoce cada detalle.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="ventaja" data-aos="fade-up" data-aos-delay="300">
-                            <div class="ventaja__icono --circulo-rojo">
-                                <img src="/api/placeholder/40/40" alt="Satisfacción">
-                            </div>
-                            <h3 class="ventaja__titulo">SATISFACCIÓN</h3>
-                            <p>
-                                Nuestro compromiso es superar tus expectativas en cada compra.
-                            </p>
-                        </div>
+                    <div class="col-lg-6 col-md-6">
+                        <img src="public/moto.jpg" alt="Moto" class="img-fluid rounded">
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE PRODUCTOS -->
+        <section class="productos-section bg-light py-5" id="productos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="text-dark fw-bold">Últimos <span class="text-danger">Productos</span></h2>
+                    <p>Explora nuestra selección de productos más recientes con la mejor calidad para tu moto</p>
+                    <a href="pages/productos.html" class="btn btn-outline-dark btn-ver-mas">Ver más productos</a>
+                </div>
+
                 <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="ventaja" data-aos="fade-up" data-aos-delay="400">
-                            <div class="ventaja__icono --circulo-rojo">
-                                <img src="/api/placeholder/40/40" alt="Variedad">
+                    <!-- Producto 1 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card h-100">
+                            <span class="badge-offer">10% OFF</span>
+                            <img src="public/productos/aceite.webp" class="card-img-top" alt="Aceite Honda">
+                            <div class="card-body">
+                                <h5 class="card-title">ACEITE HONDA 4T 10W30 1000ML</h5>
+                                <p class="card-text">S/ 44.00</p>
+                                <small class="text-muted d-block mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    (45)
+                                </small>
                             </div>
-                            <h3 class="ventaja__titulo">VARIEDAD</h3>
-                            <p>
-                                Amplia gama de productos para todas las marcas y modelos de motos.
-                            </p>
+                            <div class="card-footer">
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-shopping-cart me-2"></i>Añadir al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card h-100">
+                            <span class="badge-offer">15% OFF</span>
+                            <img src="public/productos/casco.webp" class="card-img-top" alt="Casco HJC">
+                            <div class="card-body">
+                                <h5 class="card-title">HJC C80 ROX NEGRO/ROJO/GRIS L</h5>
+                                <p class="card-text">S/ 1,040.00</p>
+                                <small class="text-muted d-block mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    (32)
+                                </small>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-shopping-cart me-2"></i>Añadir al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card h-100">
+                            <img src="public/productos/guantes.webp" class="card-img-top" alt="Guante SD-N47">
+                            <div class="card-body">
+                                <h5 class="card-title">GUANTE SD-N47 INVIERN URBAN HOM NGR L</h5>
+                                <p class="card-text">S/ 256.00</p>
+                                <small class="text-muted d-block mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    (28)
+                                </small>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-shopping-cart me-2"></i>Añadir al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card h-100">
+                            <span class="badge-offer">NUEVO</span>
+                            <img src="public/productos/llanta.webp" class="card-img-top" alt="Llanta Pirelli">
+                            <div class="card-body">
+                                <h5 class="card-title">LLANTA PIRELLI DIABLO ROSSO III 180/55-17</h5>
+                                <p class="card-text">S/ 680.00</p>
+                                <small class="text-muted d-block mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    (19)
+                                </small>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-shopping-cart me-2"></i>Añadir al carrito
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- SECCIÓN DE CONSEJOS DE MANTENIMIENTO -->
+        <section class="consejos-section py-5" id="consejos">
+            <div class="container">
+                <div class="section-header mb-5">
+                    <h2 class="text-dark fw-bold">Consejos para <span class="text-danger">Mantenimiento</span></h2>
+                    <p>Descubre cómo mantener tu moto en óptimas condiciones</p>
+                    <a href="#consejos-completos" class="btn btn-dark mt-3">Leer más</a>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Consejo 1 -->
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 me-3">
+                                <img src="public/productos/aceite.webp" alt="Cambiar aceite" class="img-fluid"
+                                    style="width: 100px;">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-2">Cambiar el Aceite</h4>
+                                <p class="text-muted">Asegúrate de utilizar el tipo de aceite correcto para tu moto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consejo 2 -->
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 me-3">
+                                <img src="public/productos/pastillasDesgastadas.jpg" alt="Revisar pastillas"
+                                    class="img-fluid" style="width: 120px;">
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-2">Revisar las Pastillas de Freno</h4>
+                                <p class="text-muted">Las pastillas desgastadas pueden comprometer tu seguridad en
+                                    carretera.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE OPINIONES DE CLIENTES -->
+        <section class="opiniones-section py-5 bg-light" id="opiniones">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <div class="section-header">
+                            <h2 class="text-dark fw-bold">Opiniones de <span class="highlight">Clientes</span></h2>
+                            <p>Lo que nuestros clientes dicen sobre nuestros productos y servicios</p>
+                            <a href="#todas-opiniones" class="btn btn-dark mt-3">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <!-- ALGO PARA AGREGAR TODAVIA NOSE QUE :D -->
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Opinión 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="public/perfil02.jpg" alt="María C." class="rounded-circle">
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">María C.</h5>
+                                        <div class="text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">Excelente calidad y variedad de repuestos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opinión 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="public/perfil01.jpg" alt="Pablo M." class="rounded-circle">
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">Pablo M.</h5>
+                                        <div class="text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">Rápido envío y atención al cliente excepcional.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opinión 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="public/perfil02.jpg" alt="Laura S." class="rounded-circle">
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">Laura S.</h5>
+                                        <div class="text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">Precios competitivos y productos originales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Ventajas -->
+        <section class="ventajas-section">
+            <div class="container">
+                <div class="ventajas-title">
+                    <h2>NUESTRAS <span>VENTAJAS</span></h2>
+                </div>
+                <div class="ventajas-description">
+                    <p>Encuentra todo lo que necesitas para tu moto, con la confianza de estar eligiendo lo mejor.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="ventaja-item">
+                            <div class="ventaja-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                                    <path
+                                        d="M7.823 2.823l-.396-.396A.25.25 0 0 1 7.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM8.75 7a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75zM9.75 9.5a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75zM9.75 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75zM12 1.5a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 12 1.5zM8 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5A.75.75 0 0 1 8 4z" />
+                                </svg>
+                            </div>
+                            <h3 class="ventaja-title">CALIDAD</h3>
+                            <p class="ventaja-text">Repuestos originales que garantizan un rendimiento y durabilidad
+                                excepcionales.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="ventaja-item">
+                            <div class="ventaja-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="ventaja-title">EXPERIENCIA</h3>
+                            <p class="ventaja-text">Más de 5 años dedicados al motociclismo, con un equipo experto que
+                                conoce cada detalle.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="ventaja-item">
+                            <div class="ventaja-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                </svg>
+                            </div>
+                            <h3 class="ventaja-title">SATISFACCIÓN</h3>
+                            <p class="ventaja-text">Nuestro compromiso es superar tus expectativas en cada compra.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="ventaja-item">
+                            <div class="ventaja-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                            </div>
+                            <h3 class="ventaja-title">SOPORTE</h3>
+                            <p class="ventaja-text">Asesoría personalizada y atención postventa para asegurarte la mejor
+                                experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section class="servicios-section text-black bg-light">
+            <div class="container">
+                <div class="servicios-title">
+                    <h2>NUESTROS <span>SERVICIOS</span></h2>
+                </div>
+                <div class="servicios-description">
+                    <p>Ofrecemos una amplia gama de servicios diseñados para cubrir todas las necesidades de tu moto.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Servicio 1 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="servicio-card">
+                            <img src="public/respuestos.jpg" alt="Venta de Repuestos" class="servicio-img">
+                            <div class="servicio-content">
+                                <h3 class="servicio-title">Venta de Repuestos y Accesorios</h3>
+                                <p class="servicio-text">Surtido amplio de piezas y accesorios originales y de calidad
+                                    para diferentes modelos de motos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="servicio-card">
+                            <img src="public/asesoria.jpg" alt="Asesoría Técnica" class="servicio-img">
+                            <div class="servicio-content">
+                                <h3 class="servicio-title">Asesoría Técnica Especializada</h3>
+                                <p class="servicio-text">Asesoramiento profesional para elegir los repuestos y
+                                    accesorios más adecuados según las necesidades de tu moto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="servicio-card">
+                            <img src="public/instlacion.jpg" alt="Instalación de Repuestos" class="servicio-img">
+                            <div class="servicio-content">
+                                <h3 class="servicio-title">Instalación de Repuestos</h3>
+                                <p class="servicio-text">Instalación profesional de piezas y accesorios para asegurar un
+                                    rendimiento óptimo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="servicio-card">
+                            <img src="public/envio.jpg" alt="Servicio de Envío" class="servicio-img">
+                            <div class="servicio-content">
+                                <h3 class="servicio-title">Servicio de Envío</h3>
+                                <p class="servicio-text">Entrega a domicilio de repuestos y accesorios, con opciones de
+                                    envío rápido y seguro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CARRUSEL DE OFERTAS -->
+        <section class="carousel-section py-5" id="ofertas">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">NUESTRAS <span class="text-danger">OFERTAS</span></h2>
+                    <p class="fw-normal mb-4">Descubre nuestras promociones especiales en repuestos y accesorios para
+                        motos.</p>
+                </div>
+
+                <!-- Carrusel de Bootstrap -->
+                <div id="ofertasCarrusel" class="carousel slide shadow" data-bs-ride="carousel">
+                    <!-- Indicadores del carrusel -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#ofertasCarrusel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Oferta 1"></button>
+                        <button type="button" data-bs-target="#ofertasCarrusel" data-bs-slide-to="1"
+                            aria-label="Oferta 2"></button>
+                        <button type="button" data-bs-target="#ofertasCarrusel" data-bs-slide-to="2"
+                            aria-label="Oferta 3"></button>
+                        <button type="button" data-bs-target="#ofertasCarrusel" data-bs-slide-to="3"
+                            aria-label="Oferta 4"></button>
+                    </div>
+
+                    <!-- Slides del carrusel -->
+                    <div class="carousel-inner">
+                        <!-- Oferta 1 -->
+                        <div class="carousel-item active">
+                            <img src="public/contacto.jpg" class="d-block w-100" alt="Oferta de cascos">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>20% DESCUENTO EN CASCOS</h3>
+                                <p>Oferta válida hasta agotar stock</p>
+                                <a href="#" class="btn btn-danger btn-sm">Ver oferta</a>
+                            </div>
+                        </div>
+
+                        <!-- Oferta 2 -->
+                        <div class="carousel-item">
+                            <img src="public/moto.jpg" class="d-block w-100" alt="Oferta de aceites">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>2x1 EN ACEITES SELECCIONADOS</h3>
+                                <p>Para todas las marcas de motos</p>
+                                <a href="#" class="btn btn-danger btn-sm">Ver oferta</a>
+                            </div>
+                        </div>
+
+                        <!-- Oferta 3 -->
+                        <div class="carousel-item">
+                            <img src="public/envio.jpg" class="d-block w-100" alt="Oferta de neumáticos">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>30% DESCUENTO EN NEUMÁTICOS</h3>
+                                <p>Todas las medidas disponibles</p>
+                                <a href="#" class="btn btn-danger btn-sm">Ver oferta</a>
+                            </div>
+                        </div>
+
+                        <!-- Oferta 4 -->
+                        <div class="carousel-item">
+                            <img src="public/asesoria.jpg" class="d-block w-100" alt="Oferta de accesorios">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>ENVÍO GRATIS EN ACCESORIOS</h3>
+                                <p>En compras superiores a S/200</p>
+                                <a href="#" class="btn btn-danger btn-sm">Ver oferta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ofertasCarrusel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#ofertasCarrusel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+
+                    <!-- Indicadores de página del carrusel -->
+                    <div class="carousel-indicators-custom mb-3">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- Footer -->

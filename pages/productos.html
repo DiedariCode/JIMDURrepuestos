@@ -270,7 +270,202 @@
             </div>
         </div>
     </div>
-    <main></main>
+    <main>
+
+        <div class="container">
+            <!-- Título principal -->
+            <h1 class="main-title">Productos</h1>
+            <p class="subtitle">Encuentra los mejores repuestos y accesorios para motos.</p>
+
+            <div class="row">
+                <!-- Sidebar con categorías y filtros -->
+                <div class="col-md-3">
+                    <div class="sidebar mb-4">
+                        <h5 class="category-title">Categorías</h5>
+                        <ul class="category-list">
+                            <li class="active">Ninguna</li>
+                            <li>Sistema de Frenos</li>
+                            <li>Sistema Eléctrico</li>
+                            <li>Motor y Transmisión</li>
+                            <li>Suspensión y Dirección</li>
+                            <li>Llantas y Ruedas</li>
+                            <li>Accesorios de Seguridad</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar mb-4">
+                        <h5 class="filter-title">Filtros</h5>
+                        <!-- Aquí irían más filtros -->
+                    </div>
+
+                    <div class="sidebar">
+                        <h5 class="price-title">Precio</h5>
+                        <input type="range" class="form-range price-range" min="0" max="100">
+                        <div class="price-labels">
+                            <span>S/29</span>
+                            <span>S/149</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productos -->
+                <div class="col-md-9">
+                    <div class="row">
+                        <!-- Producto 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <img src="../public/productos/casco.webp" alt="Casco HJC" class="product-img">
+                                <h6 class="product-title">HJC CS-R3X NEGRO/ROJO/GRIS/BLANCO L</h6>
+                                <p class="product-price">S/1049</p>
+                                <button class="btn btn-agregar">Agregar</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <img src="../public/productos/llanta.webp" alt="Llanta" class="product-img">
+                                <h6 class="product-title">LLANTA 130/90R16 K760 TT TL 67C KENDA M/C 28P TL</h6>
+                                <p class="product-price">S/630</p>
+                                <button class="btn btn-agregar">Agregar</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <img src="../public/productos/filtrp_aire.webp" alt="Filtro de aire" class="product-img">
+                                <h6 class="product-title">FILTRO DE AIRE UNIVERSAL 76X1.4 - PULGADAS</h6>
+                                <p class="product-price">S/56</p>
+                                <button class="btn btn-agregar">Agregar</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 4 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <img src="../public/productos/aceite.webp" alt="Aceite" class="product-img">
+                                <h6 class="product-title">ACEITE HONDA 4T 10W30 1000ML</h6>
+                                <p class="product-price">S/44</p>
+                                <button class="btn btn-agregar">Agregar</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 5 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <img src="../public/productos/filtro.webp" alt="Mini filtro" class="product-img">
+                                <h6 class="product-title">MINI FILTRO DE AIRE UNIVERSAL ROJO 1.25M</h6>
+                                <p class="product-price">S/27</p>
+                                <button class="btn btn-agregar">Agregar</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 6 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <img src="../public/productos/guantes.webp" alt="Guantes" class="product-img">
+                                <h6 class="product-title">GUANTE GT447 INVIERNO URBAN MOM MD#</h6>
+                                <p class="product-price">S/256</p>
+                                <button class="btn btn-agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paginación -->
+                    <nav aria-label="Paginación de productos">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <span class="page-link">Estás en la página</span>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Sección de Reseñas -->
+            <div class="reviews-section">
+                <h3 class="section-title">Reseñas de clientes</h3>
+                <p>Descubre lo que dicen nuestros clientes</p>
+
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <div class="d-flex">
+                            <!-- Flechas de navegación -->
+                            <div class="d-flex align-items-center me-2">
+                                <a href="#" class="text-dark"><i class="fas fa-chevron-left fa-2x"></i></a>
+                            </div>
+
+                            <!-- Reseña 1 -->
+                            <div class="col-md-5">
+                                <div class="review-card">
+                                    <div class="reviewer-name">
+                                        <i class="fas fa-user-circle"></i> Cliente 1
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p>Excelente producto, lo recomiendo totalmente</p>
+                                </div>
+                            </div>
+
+                            <!-- Reseña 2 -->
+                            <div class="col-md-5">
+                                <div class="review-card">
+                                    <div class="reviewer-name">
+                                        <i class="fas fa-user-circle"></i> Cliente 2
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p>Rápido envío y buena calidad</p>
+                                </div>
+                            </div>
+
+                            <!-- Flechas de navegación -->
+                            <div class="d-flex align-items-center ms-2">
+                                <a href="#" class="text-dark"><i class="fas fa-chevron-right fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Suscripción -->
+            <div class="newsletter-section row">
+                <div class="col-md-6">
+                    <h3 class="section-title">Suscripción al boletín</h3>
+                    <p>Recibe ofertas exclusivas y novedades en tu correo</p>
+
+                    <div class="newsletter-form">
+                        <input type="email" class="form-control" placeholder="ejemplo@email.com">
+                        <button class="btn btn-suscribirse">Suscríbete</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info mt-5">
+                        <p>Como contactarnos</p>
+                        <p>contacto@tienda.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
     <footer>
         <!-- place footer here -->
     </footer>
